@@ -7,3 +7,4 @@ A web Dictionary built with Flask framework and loads data from a json file to b
 - Data loaded from a JSON file.
 - Gives the closest option when a word is written incorrectly.
 
+![Demo GIF](2023-07-17_06h48_29.gif)
