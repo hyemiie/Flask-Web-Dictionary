@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: rgb(179, 175, 175);
+  }
+  
+  body {
+    padding: 20px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .body {
+    width: 60%;
+    max-height: 400px;
+    background-color: rgb(241, 232, 232);
+    padding: 40px;
+    border-radius: 20px;
+  }
+  
+  /* .heading {
+    height: 30%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  } */
+  
+
+hr{
+    color: rgb(9, 1, 17);
+    width: 80%;
+}
+
+ul{
+    /* padding: 20px; */
+    line-height: 30px;
+    /* background-color: rgb(44, 44, 43); */
+    border-radius: 5%;
+    margin-top: 20px;
+    
+    
+}
+
+#list{
+    list-style:disc;
+    font-size: 20px;
+    padding: 0 15px;
+    margin-left: 20px;
+    color: white;
+}
+
+#searchedWord{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: white;
+
+}
+
+#suggestion{
+    font-size: 20px;
+}
+
+#form{
+    padding: 2px;
+    min-height: 50px;
+}
+
+#label{
+    font-size: 20px;
+    padding: 10px;
+}
+
+#word{
+    font-size: 20px;
+    height:50px;
+    width: 100%;
+    box-shadow: rgb(189, 209, 226);
+    border-radius: 20px;
+    border-width: 0px;
+    border-color: rgb(101, 209, 173);
+    text-align:center;
+    background-color: rgb(243, 240, 235);
+    margin-top:2%;
+}
+
+
+#error{
+    font-size: 35px;
+    color: rgb(243, 87, 87);
+    font-style: italic;
+}
+
+
+/* #button{
+
+    font-size: 20px;
+    border-radius: 50px;
+    box-shadow: aliceblue;
+    border: blanchedalmond;
+    text-align: center;
+    margin-top: 4%;
+    width: 30%;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} */

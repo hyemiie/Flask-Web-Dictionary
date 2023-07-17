@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Web Dictionary</title>
+  </head>
+  <body>
+    <section class="body"> 
+      <h1>What word are you looking for?</h1>
+      <form action="{{ url_for('translate') }}" method="post" id="form">
+        <input type="text" id="word" name="word" value="{{ word }}" placeholder="Enter a word">
+        <button type="submit" id="button"><i class="fas fa-search"></i></button>
+      </form>
+      
+      {% if meaning %}
+        <p id="searchedWord">{{ word }}:</p>
+        <hr>
+        <ul>
+          {% for sentence in meaning.split('. ') %}
+            <li id="list">{{ sentence }}.</li>
+          {% endfor %}
+        </ul>
+      {% elif suggestion %}
+        <p id="suggestion">Did you mean <a href="{{ url_for('translate', word=suggestion) }}">{{ suggestion }}</a>?</p>
+      {% elif error %}
+        <p id="error">{{ error }}</p>
+      {% endif %}
+    </section>
+  </body>
+</html>
